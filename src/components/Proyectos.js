@@ -2,6 +2,7 @@
 import tiendamusikal from '../assets/tiendamusikal.PNG'
 import lacomanda from '../assets/lacomanda.PNG'
 import crudApp from '../assets/crudApp.PNG';
+import cafeteria from '../assets/cafeteria.JPG';
 
 
 export const Proyectos = [
@@ -31,6 +32,15 @@ export const Proyectos = [
             used_Tecs:" React Js - Chakra UI",
             picture: crudApp,
             url:`https://crud-project-app.netlify.app/`
+      },
+
+      {
+            id: 3,
+            titulo: "La Cafeteria",
+            descripcion: "Landing Page realizada con SASS",
+            used_Tecs:"Sass",
+            picture: cafeteria,
+            url:`https://cafeterianueva.netlify.app/`
       }
 
       

@@ -10,11 +10,8 @@ const Card = (props) => {
 
         <VStack
             maxW="17rem"
+            height= "20rem"
             position="relative"
-            // maxH="20rem"
-            // boxShadow="dark-lg"
-            // borderRadius={12}
-            
             color={props.isDark ? "black" : "black"}
             fontFamily="Roboto"
             margin="2rem"
@@ -27,10 +24,10 @@ const Card = (props) => {
             
         >
             <Image
-                // borderTopRadius={10}
-                width="100%"
-                // maxH="20em"
-                // objectFit="cover"
+                objectFit="cover"
+                width="30rem"
+                height="12rem"
+                
                 src={props.picture}
                 fallbackSrc="https://via.placeholder.com/382x300"
                 mb={2}

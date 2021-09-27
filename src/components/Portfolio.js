@@ -19,17 +19,10 @@ const Portfolio = (props) => {
         <Box
             textAlign="center"
             mt="4rem"
-            // m={2}
             bg={props.isDark ? "black" : "white"}
             id="portfolio"
             
         >
-            {/* <Heading
-                color="black"
-                mb={6}
-            >
-                Portfolio
-            </Heading> */}
 
             
                 <Flex 

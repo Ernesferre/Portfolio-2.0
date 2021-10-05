@@ -15,10 +15,14 @@ import {
 import { FaReact, FaHtml5, FaGithub, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import Zoom from "react-reveal/Zoom";
-import GoBack from "./GoBack";
-import Title from "./Title";
+import GoBack from "../GoBack";
+import Title from "../Title";
+import { StoreContext } from "../Context/StoreContext";
+import { useContext } from "react";
 
 const Skills = (props) => {
+  const { english } = useContext(StoreContext);
+
   return (
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
@@ -26,8 +30,8 @@ const Skills = (props) => {
           <GoBack />
         </GridItem>
 
-        <GridItem colSpan={1} colStart={[3, 3]} colEnd={[4, 4]}>
-          <Title title={"Skills"} />
+        <GridItem colSpan={1} colStart={[3]} colEnd={[4]}>
+          <Title title={english ? "Skills" : "Habilidades"} />
         </GridItem>
       </Grid>
 

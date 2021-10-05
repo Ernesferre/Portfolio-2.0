@@ -8,12 +8,17 @@ const Title = ({ title }) => {
 
   return (
     <Heading
-      color={isDark ? "yellow.600" : "black"}
+      color={isDark ? "white" : "black"}
       fontSize="6xl"
       letterSpacing={4}
       fontFamily="Amatic SC"
       fontWeight="700"
-      //   textAlign="center"
+      textAlign={["left", "center"]}
+      // boxShadow="0 0 20px #8e9273"
+      // backgroundColor="transparent"
+      // _hover={{
+      //   boxShadow: "0 0 20px #8e9273",
+      // }}
     >
       {title}
     </Heading>

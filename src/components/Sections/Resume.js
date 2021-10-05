@@ -8,13 +8,17 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import cv from "../assets/cv.PNG";
+import cv from "../../assets/cv.PNG";
 import React from "react";
 import Bounce from "react-reveal/Bounce";
-import GoBack from "./GoBack";
-import Title from "./Title";
+import GoBack from "../GoBack";
+import Title from "../Title";
+import { StoreContext } from "../Context/StoreContext";
+import { useContext } from "react";
 
 const Resume = () => {
+  const { english } = useContext(StoreContext);
+
   return (
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
@@ -23,7 +27,7 @@ const Resume = () => {
         </GridItem>
 
         <GridItem colSpan={1} colStart={3} colEnd={4} textAlign="center">
-          <Title title={"Resume"} />
+          <Title title={english ? "Resume" : "CV"} />
         </GridItem>
       </Grid>
 

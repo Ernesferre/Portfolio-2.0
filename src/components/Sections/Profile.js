@@ -13,12 +13,17 @@ import {
   Center,
 } from "@chakra-ui/react";
 import React from "react";
-import Ernesto from "../assets/Ernesto.jpg";
+import Ernesto from "../../assets/Ernesto.jpg";
 import Fade from "react-reveal/Fade";
-import GoBack from "./GoBack";
-import Title from "./Title";
+import GoBack from "../GoBack";
+import Title from "../Title";
+import { StoreContext } from "../Context/StoreContext";
+import { useContext } from "react";
 
 const Profile = (props) => {
+  const { english } = useContext(StoreContext);
+  console.log("Desde Profile:", english);
+
   return (
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
@@ -27,7 +32,7 @@ const Profile = (props) => {
         </GridItem>
 
         <GridItem colSpan={1} colStart={3} colEnd={4} textAlign="center">
-          <Title title={"Profile"} />
+          <Title title={english ? "Profile" : "Perfil"} />
         </GridItem>
       </Grid>
 

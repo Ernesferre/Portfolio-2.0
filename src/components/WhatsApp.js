@@ -13,6 +13,11 @@ const WhatsApp = () => {
       right="1rem"
       bottom="1rem"
       cursor="pointer"
+      _hover={{
+        boxShadow: "0 0 20px #4f9",
+        backgroundColor: "transparent",
+        rounded: "full",
+      }}
     >
       <a href="https://wa.me/5493515497313">
         <Img src={wa} alt="whatsapp" w="5rem" h="5rem" />{" "}

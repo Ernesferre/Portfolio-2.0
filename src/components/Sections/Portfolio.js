@@ -1,17 +1,19 @@
 import { Box, Heading, HStack, Flex, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
-import Card from "../components/Card";
-import { Proyectos } from "./Proyectos";
+import Card from "../Card";
+import { Proyectos } from "../Proyectos";
 import Zoom from "react-reveal/Zoom";
-import GoBack from "./GoBack";
-import Title from "./Title";
+import GoBack from "../GoBack";
+import Title from "../Title";
+import { StoreContext } from "../Context/StoreContext";
+import { useContext } from "react";
 
 const Portfolio = (props) => {
   console.log(Proyectos[0].descripcion);
 
   const { isDark } = props;
 
-  console.log(isDark);
+  const { english } = useContext(StoreContext);
 
   return (
     <>
@@ -22,8 +24,8 @@ const Portfolio = (props) => {
 
         <GridItem
           colSpan={1}
-          colStart={[2, 3]}
-          colEnd={[3, 4]}
+          colStart={[3]}
+          colEnd={[4]}
           //   textAlign="center"
         >
           <Title title={"Portfolio"} />

@@ -1,12 +1,14 @@
 import React from "react";
 import { Box, Button, SimpleGrid, Grid, GridItem } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom"
 import Fade from "react-reveal/Fade";
-// import { Link } from "react-scroll"
+import { StoreContext } from "./Context/StoreContext";
+import { useContext } from "react";
 
 const Sections = (props) => {
   console.log(props.isDark);
+  const { english } = useContext(StoreContext);
+  console.log("Desde Section:", english);
 
   return (
     <Fade>
@@ -18,7 +20,7 @@ const Sections = (props) => {
         bg={props.isDark ? "black" : "white"}
         textAlign="center"
         fontFamily="Amatic SC"
-        fontWeight="bold"
+        fontWeight="700"
       >
         <SimpleGrid
           bg={props.isDark ? "black" : "white"}
@@ -29,15 +31,11 @@ const Sections = (props) => {
           rounded="lg"
           color="black"
           mt={8}
+          fontWeight="700"
         >
-          <Link
-            to="/profile"
-
-            // smooth={true}
-            // duration={1000}
-          >
+          <Link to="/profile">
             <Button
-              boxShadow="md"
+              // boxShadow="md"
               w={["280px", "200px"]}
               p="6"
               rounded="md"
@@ -46,13 +44,15 @@ const Sections = (props) => {
               letterSpacing="10px"
               textDecorationLine="none"
               _hover={{ textDecoration: "none" }}
-              boxShadow="2xl"
+              // boxShadow="2xl"
+
+              text
               href="profile"
               _hover={{
-                boxShadow: "dark-lg",
+                boxShadow: "0 0 20px #8e9273",
               }}
             >
-              Profile
+              {english ? <h3>Profile</h3> : <h3>Perfil</h3>}
             </Button>
           </Link>
 
@@ -69,10 +69,10 @@ const Sections = (props) => {
               _hover={{ textDecoration: "none" }}
               boxShadow="2xl"
               _hover={{
-                boxShadow: "dark-lg",
+                boxShadow: "0 0 20px #8e9273",
               }}
             >
-              Skills
+              {english ? <h3>Skills</h3> : <h3>Habilidades</h3>}
             </Button>
           </Link>
 
@@ -89,7 +89,7 @@ const Sections = (props) => {
               _hover={{ textDecoration: "none" }}
               boxShadow="2xl"
               _hover={{
-                boxShadow: "dark-lg",
+                boxShadow: "0 0 20px #8e9273",
               }}
             >
               Portfolio
@@ -104,15 +104,19 @@ const Sections = (props) => {
               rounded="md"
               bg="yellow.600"
               color="black"
-              letterSpacing="6px"
+              letterSpacing="4px"
               textDecorationLine="none"
               _hover={{ textDecoration: "none" }}
               boxShadow="2xl"
               _hover={{
-                boxShadow: "dark-lg",
+                boxShadow: "0 0 20px #8e9273",
               }}
             >
-              Work Experience
+              {english ? (
+                <h3>Work Experience</h3>
+              ) : (
+                <h3>Experiencia Laboral</h3>
+              )}
             </Button>
           </Link>
 
@@ -125,15 +129,15 @@ const Sections = (props) => {
                 rounded="md"
                 bg="yellow.600"
                 color="black"
-                letterSpacing="10px"
+                letterSpacing="8px"
                 textDecorationLine="none"
                 _hover={{ textDecoration: "none" }}
                 boxShadow="2xl"
                 _hover={{
-                  boxShadow: "dark-lg",
+                  boxShadow: "0 0 20px #8e9273",
                 }}
               >
-                Resume
+                {english ? <h3>Resume</h3> : <h3>CV</h3>}
               </Button>
             </Link>
           </GridItem>
@@ -152,10 +156,10 @@ const Sections = (props) => {
                 _hover={{ textDecoration: "none" }}
                 boxShadow="2xl"
                 _hover={{
-                  boxShadow: "dark-lg",
+                  boxShadow: "0 0 20px #8e9273",
                 }}
               >
-                Education
+                {english ? <h3>Education</h3> : <h3>Educación</h3>}
               </Button>
             </Link>
           </GridItem>

@@ -56,32 +56,18 @@ const Presentation = () => {
                 p={7}
                 mb={2}
                 letterSpacing={7}
-                boxShadow="dark-lg"
+                // boxShadow="dark-lg"
                 textDecoration="none"
                 size="4xl"
                 onClick={handleStart}
                 fontFamily="Amatic SC"
                 _hover={{
-                  textdecoration: "none",
-                  boxShadow: "dark-lg",
+                  boxShadow: "0 0 20px #bcbcbc",
                 }}
               >
                 EF
               </Heading>
             </Link>
-
-            {/* <Image
-                
-                    borderRadius="full"
-                    width="200px"
-                    border="10px"
-                    bordercolor="brown"
-                    isRound="true"
-                    src={Ernesto}
-                    alt="Ernesto"
-                    boxShadow="dark-lg"
-                    mb={2}
-                /> */}
           </Jump>
 
           <VStack>

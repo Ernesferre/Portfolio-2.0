@@ -15,7 +15,7 @@ const Sections = (props) => {
       <Box
         w={["95%", "80%"]}
         mx="auto"
-        // mb="6rem"
+        mb="6rem"
         alignSelf="center"
         bg={props.isDark ? "black" : "white"}
         textAlign="center"

@@ -38,6 +38,7 @@ const Skills = (props) => {
       <Box
         textAlign="center"
         mt={8}
+        mb="5rem"
         bg={props.isDark ? "black" : "white"}
         color={props.isDark ? "white" : "black"}
         id="skills"

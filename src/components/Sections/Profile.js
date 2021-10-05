@@ -31,7 +31,7 @@ const Profile = (props) => {
           <GoBack />
         </GridItem>
 
-        <GridItem colSpan={1} colStart={3} colEnd={4} textAlign="center">
+        <GridItem colSpan={1} colStart={[3]} colEnd={[4]} textAlign="center">
           <Title title={english ? "Profile" : "Perfil"} />
         </GridItem>
       </Grid>
@@ -59,8 +59,6 @@ const Profile = (props) => {
                     boxShadow="dark-lg"
                     display="inline"
                     mb={6}
-                    // border="1px"
-                    // borderColor="yellow.600"
                     borderRadius="full"
                     _hover={{
                       boxShadow: "dark-lg",
@@ -84,19 +82,45 @@ const Profile = (props) => {
                 p={5}
                 color={props.isDark ? "white" : "black"}
               >
-                I am a self-taught programmer, passionate about technology. I am
-                a deeply committed person about the things I decide to carry out
-                and with the people who I work for.
-                <br></br>
-                Nowadays, my main wish is to work in a place where I can apply
-                my knowledge but at the same time be the most productive I could
-                be adding up value to the team work.
-                <br></br>I have a very high work ethic and I like to maintain a
-                good work environment where respect and good communication are
-                essentials values of the team.
-                <br></br>
-                My greatest desire is to seek personal and professional growth
-                by learning new technologies and new ways of working.
+                {english ? (
+                  <Text>
+                    Hi there ! my name is Ernest, I am a self-taught programmer,
+                    passionate about technology. I am a deeply committed person
+                    about the things I decide to carry out and with the people
+                    who I work for.
+                    <br></br>
+                    Nowadays, my main wish is to work in a place where I can
+                    apply my knowledge but at the same time be the most
+                    productive I could be adding up value to the team work.
+                    <br></br>I have a very high work ethic and I like to
+                    maintain a good work environment where respect and good
+                    communication are essentials values of the team.
+                    <br></br>
+                    My greatest desire is to seek personal and professional
+                    growth by learning new technologies and new ways of working.
+                  </Text>
+                ) : (
+                  <Text>
+                    Hola ! Mi nombre es Ernesto, soy un programador autodidacta
+                    apasionado por la tecnología y por todo lo que ésta puede
+                    solucionar. Soy una persona profundamente comprometida con
+                    aquellas cosas que me propongo realizar y con la gente con
+                    la que me toca trabajar.
+                    <br></br>
+                    Actualmente, mi principal objetivo es poder trabajar en una
+                    empresa donde pueda aplicar mis conocimientos pero, al mismo
+                    tiempo, ser lo más productivo posible agregando valor al
+                    equipo de trabajo.
+                    <br></br>
+                    Soy una persona con ética de trabajo y me gusta mantener un
+                    buen clima laboral donde el respeto y la buena comunicación
+                    sean valores esenciales.
+                    <br></br>
+                    Mi mayor deseo es buscar el crecimiento personal y
+                    profesional continuo, aprendiendo nuevas tecnologías y
+                    formas de trabajo.
+                  </Text>
+                )}
               </Text>
             </Box>
           </Fade>

@@ -12,6 +12,7 @@ import Presentation from "./components/Presentation";
 import { Box, Container } from "@chakra-ui/react";
 import EmptySection from "./components/EmptySection";
 import { StoreProvider } from "./components/Context/StoreContext";
+import Header from "./components/Header";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,9 +24,13 @@ function App() {
       <StoreProvider>
         <Box bg={isDark ? "black" : "white"}>
           <BrowserRouter>
-            <Presentation isDark={isDark} />
+            <Header toggleColorMode={toggleColorMode} isDark={isDark} />
 
             <Switch>
+              <Route exact path="/">
+                <Presentation isDark={isDark} />
+              </Route>
+
               <Route exact path="/profile">
                 <Profile isDark={isDark} />
               </Route>

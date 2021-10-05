@@ -39,8 +39,6 @@ const Presentation = () => {
         bg={isDark ? "black" : "white"}
         // h="300px"
       >
-        <Header toggleColorMode={toggleColorMode} isDark={isDark} />
-
         <Grid placeItems="center" p={3}>
           <Jump>
             <Link

@@ -27,19 +27,9 @@ const Header = ({ toggleColorMode, isDark }) => {
 
   console.log(english);
 
-  //   const [english, setEnglish] = useState(true);
-
-  //   const ChangeLangEn = () => {
-  //     setEnglish(true);
-  //   };
-
-  //   const ChangeLangEs = () => {
-  //     setEnglish(false);
-  //   };
-
   return (
     <HStack
-      mb="3"
+      mb="1"
       mr={2}
       p={4}
       spacing={6}

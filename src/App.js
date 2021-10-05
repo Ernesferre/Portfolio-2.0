@@ -13,6 +13,7 @@ import { Box, Container } from "@chakra-ui/react";
 import EmptySection from "./components/EmptySection";
 import { StoreProvider } from "./components/Context/StoreContext";
 import Header from "./components/Header";
+import WhatsApp from "./components/WhatsApp";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -47,6 +48,8 @@ function App() {
                 <Resume />
               </Route>
             </Switch>
+
+            <WhatsApp />
           </BrowserRouter>
         </Box>
 

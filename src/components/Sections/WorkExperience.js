@@ -25,7 +25,7 @@ const WorkExperience = () => {
           </GridItem>
         </Grid>
       </Box>
-      <Container mt="2rem" w={["90%", "100%"]}>
+      <Box mt="2rem" w={["83%", "70%", "60%"]} mx="auto">
         <ul>
           <li>
             <Text
@@ -78,7 +78,7 @@ const WorkExperience = () => {
             </Text>
           </li>
         </ul>
-      </Container>
+      </Box>
     </Box>
   );
 };

@@ -35,7 +35,7 @@ const WorkExperience = () => {
               color="yellow.500"
             >
               Coderhouse | Tutor de React Js y Javascript | Feb 2021 -
-              Actualidad
+              Actualidad.
             </Text>
             <Text fontSize="0.8rem">
               Brindar apoyo y acompañar a estudiantes en su camino para ser
@@ -52,7 +52,7 @@ const WorkExperience = () => {
               fontWeight="bold"
               color="yellow.500"
             >
-              H&H, Responsable de Compras | Mar 2019 | May 2020
+              H&H, Responsable de Compras | Mar 2019 | May 2020.
             </Text>
           </li>
           <li>
@@ -63,7 +63,7 @@ const WorkExperience = () => {
               fontWeight="bold"
               color="yellow.500"
             >
-              Arcor, Comprador Corporativo | Nov 2013 | Ene 2018
+              Arcor, Comprador Corporativo | Nov 2013 | Ene 2018.
             </Text>
           </li>
           <li>
@@ -74,7 +74,7 @@ const WorkExperience = () => {
               fontWeight="bold"
               color="yellow.500"
             >
-              Renault, Comprador Productivo | Feb 2011 | Mar 2013
+              Renault, Comprador Productivo | Feb 2011 | Mar 2013.
             </Text>
           </li>
         </ul>

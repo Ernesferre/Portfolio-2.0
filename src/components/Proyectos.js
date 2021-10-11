@@ -3,10 +3,20 @@ import lacomanda from "../assets/lacomanda.PNG";
 import crudApp from "../assets/crudApp.PNG";
 import cafeteria from "../assets/cafeteria.JPG";
 import superheroes from "../assets/superheroes.JPG";
+import movies from "../assets/movies.JPG";
 
 export const Proyectos = [
   {
     id: 0,
+    titulo: "My Movies",
+    descripcion: "Show and sort a List of movies obtained from an Api",
+    used_Tecs: " React Js - Charkra UI ",
+    picture: movies,
+    url: `https://app-mymovies.netlify.app/`,
+  },
+
+  {
+    id: 1,
     titulo: "Tienda MusiKal",
     descripcion: "E-commerce de Articulos Musicales",
     used_Tecs: " React Js - Context - Firebase ",
@@ -15,7 +25,7 @@ export const Proyectos = [
   },
 
   {
-    id: 1,
+    id: 2,
     titulo: "La Comanda",
     descripcion: "Carrito de Compras para Restaurante La Comanda",
     used_Tecs: "React - Styled Components",
@@ -24,7 +34,7 @@ export const Proyectos = [
   },
 
   {
-    id: 2,
+    id: 3,
     titulo: "Gestion de Proyectos",
     descripcion: "CRUD App para administrar y hacer seguimiento de proyectos",
     used_Tecs: " React Js - Chakra UI",
@@ -33,7 +43,7 @@ export const Proyectos = [
   },
 
   {
-    id: 3,
+    id: 4,
     titulo: "La Cafeteria",
     descripcion: "Landing Page realizada con SASS",
     used_Tecs: "Sass",
@@ -42,7 +52,7 @@ export const Proyectos = [
   },
 
   {
-    id: 4,
+    id: 5,
     titulo: "SuperHeroes",
     descripcion: "Buscador de Superheroes (Conexion con Api)",
     used_Tecs: "React Js - Bootstrap - Context",

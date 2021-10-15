@@ -32,17 +32,8 @@ const Resume = ({ isDark }) => {
       </Grid>
 
       <Bounce top>
-        <Container
-          placeItems="center"
-          mt="4rem"
-          // mb={4}
-          id="resume"
-        >
-          <Text
-            color="grey.200"
-            // mb={6}
-            textAlign="center"
-          >
+        <Container placeItems="center" mt="4rem" id="resume">
+          <Text color="grey.200" textAlign="center">
             Click image to open in big screen
           </Text>
 

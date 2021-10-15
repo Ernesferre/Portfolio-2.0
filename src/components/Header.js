@@ -31,7 +31,6 @@ const Header = ({ toggleColorMode, isDark }) => {
     <HStack
       mb="1"
       mr={2}
-      h="1rem"
       p={4}
       spacing={6}
       position="sticky"

@@ -47,7 +47,7 @@ function App() {
               </Route>
 
               <Route path="/resume">
-                <Resume />
+                <Resume isDark={isDark} />
               </Route>
 
               <Route path="/workexperience">

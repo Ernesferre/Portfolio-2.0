@@ -9,7 +9,8 @@ export const Proyectos = [
   {
     id: 0,
     titulo: "My Movies",
-    descripcion: "Show and sort a List of movies obtained from an Api",
+    descripcion:
+      "Despliegue de lista de peliculas desde API y modificacion de criterio de ordenamiento",
     used_Tecs: " React Js - Charkra UI ",
     picture: movies,
     url: `https://app-mymovies.netlify.app/`,

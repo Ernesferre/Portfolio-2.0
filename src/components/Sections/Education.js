@@ -40,12 +40,15 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Ingeniería Industrial
               </Text>
               <Text mb="0.5rem">Universidad Católica de Cordoba </Text>
-              <Text color="gray.500"> Feb 02 - Mar 08</Text>
+              <Text color="gray.500" mb="2rem">
+                {" "}
+                Feb 2002 - Mar 2008
+              </Text>
             </Text>
             <Text fontSize="0.8rem" color={isDark ? "white" : "black"}></Text>
           </li>
@@ -56,11 +59,14 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 MBA (Parcial)
               </Text>{" "}
               <Text mb="0.5rem">Universidad Siglo 21 </Text>
-              <Text color="gray.500"> Feb 17 - Mar 18 </Text>
+              <Text color="gray.500" mb="2rem">
+                {" "}
+                Feb 2017 - Mar 2018{" "}
+              </Text>
             </Text>
           </li>
 
@@ -70,15 +76,15 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 Bachiller en Economia y Gestión de las Organizaciones
               </Text>
-              <Text mb="0.5rem">
-                Bachiller en Economia y Gestión de las Organizaciones | Colegio
-                Lasalle{" "}
-              </Text>
+              <Text mb="0.5rem">Colegio Lasalle </Text>
 
-              <Text color="gray.500"> Ene 1996 - Dic 2001</Text>
+              <Text color="gray.500" mb="2rem">
+                {" "}
+                Ene 1996 - Dic 2001
+              </Text>
             </Text>
           </li>
         </ul>
@@ -96,9 +102,9 @@ const Education = ({ isDark }) => {
           Cursos de Formacion
         </Heading>
         <ul>
-          <li mb="4rem">
-            <Text fontSize="1rem" color={isDark ? "white" : "black"}>
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+          <li mb="6rem">
+            <Text color={isDark ? "white" : "black"}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Alkemy{" "}
               </Text>
@@ -120,7 +126,7 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Coderhouse{" "}
               </Text>
@@ -137,7 +143,7 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Coderhouse{" "}
               </Text>
@@ -153,7 +159,7 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Udemy{" "}
               </Text>
@@ -173,7 +179,7 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="bold" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
                 {" "}
                 Udemy{" "}
               </Text>

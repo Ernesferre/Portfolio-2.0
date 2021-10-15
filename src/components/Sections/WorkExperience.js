@@ -25,6 +25,7 @@ const WorkExperience = ({ isDark }) => {
           </GridItem>
         </Grid>
       </Box>
+
       <Box mt="2rem" w={["83%", "70%", "60%"]} mx="auto">
         <ul>
           <li mb="6rem">
@@ -55,6 +56,12 @@ const WorkExperience = ({ isDark }) => {
             >
               H&H, Responsable de Compras | Mar 2019 | May 2020.
             </Text>
+            <Text fontSize="0.8rem" color={isDark ? "white" : "black"}>
+              Compra y distribución de insumos varios a las diferentes
+              hosterías/campos. Búsqueda y desarrollo de nuevos proveedores.
+              Manejo y coordinación de equipo logístico para asegurar entregas
+              en tiempo y forma. Desarrollo de procedimiento de compras.
+            </Text>
           </li>
           <li>
             <Text
@@ -66,6 +73,16 @@ const WorkExperience = ({ isDark }) => {
             >
               Arcor, Comprador Corporativo | Nov 2013 | Ene 2018.
             </Text>
+            <Text fontSize="0.8rem" color={isDark ? "white" : "black"}>
+              Negociación de acuerdos corporativos con proveedores calificados
+              para abastecer a las diferentes fabricas pertenecientes al grupo.
+              Compras para nuevos proyectos provenientes del sector de
+              ingeniería corporativa (Obras civiles, termo mecánicas,
+              electromecánicas, equipamiento industrial, autoelevadores,
+              instrumentación, etc). Análisis de estructura de costos y
+              negociación de condiciones comerciales. Generación, liberación y
+              seguimiento de órdenes de compra.
+            </Text>
           </li>
           <li>
             <Text
@@ -76,6 +93,13 @@ const WorkExperience = ({ isDark }) => {
               color="yellow.500"
             >
               Renault, Comprador Productivo | Feb 2011 | Mar 2013.
+            </Text>
+            <Text fontSize="0.8rem" color={isDark ? "white" : "black"}>
+              Compras de materia prima. Análisis del proceso de producción del
+              proveedor, detección de ineficiencias, sugerencia de mejoras,
+              reducción de costos. Compras de moldes y herramentales. Generación
+              de variantes de precios en SAP. Importación de herramentales del
+              exterior
             </Text>
           </li>
         </ul>

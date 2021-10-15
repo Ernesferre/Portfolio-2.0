@@ -20,14 +20,14 @@ import Title from "../Title";
 import { StoreContext } from "../Context/StoreContext";
 import { useContext } from "react";
 
-const Skills = (props) => {
+const Skills = ({ isDark }) => {
   const { english } = useContext(StoreContext);
 
   return (
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <GridItem colSpan={1}>
-          <GoBack />
+          <GoBack isDark={isDark} />
         </GridItem>
 
         <GridItem colSpan={1} colStart={[3]} colEnd={[4]}>
@@ -39,8 +39,8 @@ const Skills = (props) => {
         textAlign="center"
         mt={8}
         mb="5rem"
-        bg={props.isDark ? "black" : "white"}
-        color={props.isDark ? "white" : "black"}
+        bg={isDark ? "black" : "white"}
+        color={isDark ? "white" : "black"}
         id="skills"
         // mb="10rem"
       >

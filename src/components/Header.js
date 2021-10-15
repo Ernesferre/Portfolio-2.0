@@ -65,16 +65,12 @@ const Header = ({ toggleColorMode, isDark }) => {
         _hover={{
           boxShadow: "dark-lg",
         }}
-        // alignSelf="flex-start"
       ></Img>
 
       <Img
         src={espaniol}
         ml="3"
         rounded="full"
-        // p="1px"
-        // border="0"
-        // borderColor="transparent"
         w="3rem"
         isRound="true"
         cursor="pointer"
@@ -92,12 +88,14 @@ const Header = ({ toggleColorMode, isDark }) => {
 
       <Link
         isRound="true"
+        rounded="full"
         alignSelf="flex-start"
-        // icon={<FaGithub />}
         ml="6"
         mr="4"
         fontSize="x-large"
         href="https://github.com/Ernesferre"
+        bg={isDark ? "black" : "white"}
+        color={isDark ? "white" : "black"}
         isExternal
       >
         <FaGithub
@@ -115,17 +113,12 @@ const Header = ({ toggleColorMode, isDark }) => {
         ml="6"
         fontSize="x-large"
         href="https://www.linkedin.com/in/ernes-ferreyra/"
+        bg={isDark ? "black" : "white"}
+        color={isDark ? "white" : "black"}
         isExternal
       >
         <FaLinkedin />
       </Link>
-
-      {/* <IconButton
-                isRound="true"
-                icon={<FaLinkedin />}
-                ml="2"
-            >
-            </IconButton> */}
     </HStack>
   );
 };

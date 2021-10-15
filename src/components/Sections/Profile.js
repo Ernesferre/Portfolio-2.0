@@ -20,7 +20,7 @@ import Title from "../Title";
 import { StoreContext } from "../Context/StoreContext";
 import { useContext } from "react";
 
-const Profile = (props) => {
+const Profile = ({ isDark }) => {
   const { english } = useContext(StoreContext);
   console.log("Desde Profile:", english);
 
@@ -28,7 +28,7 @@ const Profile = (props) => {
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <GridItem colSpan={1}>
-          <GoBack />
+          <GoBack isDark={isDark} />
         </GridItem>
 
         <GridItem colSpan={1} colStart={[3]} colEnd={[4]} textAlign="center">
@@ -37,9 +37,8 @@ const Profile = (props) => {
       </Grid>
 
       <Box
-        //   textAlign="center"
         mx="auto"
-        bg={props.isDark ? "black" : "white"}
+        bg={isDark ? "black" : "white"}
         mt="2rem"
         id="profile"
         w="90%"
@@ -80,7 +79,7 @@ const Profile = (props) => {
                 fontWeight="thin"
                 letterSpacing={0}
                 p={5}
-                color={props.isDark ? "white" : "black"}
+                color={isDark ? "white" : "black"}
               >
                 {english ? (
                   <Text>

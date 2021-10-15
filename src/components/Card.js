@@ -31,7 +31,7 @@ const Card = (props) => {
       }}
     >
       <Image
-        objectFit="cover"
+        // objectFit="cover"
         width="30rem"
         height="12rem"
         src={props.picture}

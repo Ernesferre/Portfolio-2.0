@@ -8,10 +8,10 @@ import Title from "../Title";
 import { StoreContext } from "../Context/StoreContext";
 import { useContext } from "react";
 
-const Portfolio = (props) => {
+const Portfolio = ({ isDark }) => {
   console.log(Proyectos[0].descripcion);
 
-  const { isDark } = props;
+  // const { isDark } = props;
 
   const { english } = useContext(StoreContext);
 
@@ -19,7 +19,7 @@ const Portfolio = (props) => {
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <GridItem colSpan={1}>
-          <GoBack />
+          <GoBack isDark={isDark} />
         </GridItem>
 
         <GridItem
@@ -36,7 +36,7 @@ const Portfolio = (props) => {
         <Box
           textAlign="center"
           mt="4rem"
-          bg={props.isDark ? "black" : "white"}
+          bg={isDark ? "black" : "white"}
           id="portfolio"
         >
           <Flex flexWrap="wrap" mt="3rem" justifyContent="center">

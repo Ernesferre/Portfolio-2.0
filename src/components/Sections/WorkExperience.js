@@ -5,7 +5,7 @@ import Title from "../Title";
 import { StoreContext } from "../Context/StoreContext";
 import { useContext } from "react";
 
-const WorkExperience = () => {
+const WorkExperience = ({ isDark }) => {
   const { english } = useContext(StoreContext);
 
   return (
@@ -15,7 +15,7 @@ const WorkExperience = () => {
       <Box>
         <Grid templateColumns="repeat(5, 1fr)" gap={6}>
           <GridItem colSpan={1}>
-            <GoBack />
+            <GoBack isDark={isDark} />
           </GridItem>
 
           <GridItem colSpan={1} colStart={[2, 3]} colEnd={[3, 4]}>
@@ -27,7 +27,7 @@ const WorkExperience = () => {
       </Box>
       <Box mt="2rem" w={["83%", "70%", "60%"]} mx="auto">
         <ul>
-          <li>
+          <li mb="6rem">
             <Text
               fontSize="1rem"
               mb="0.7rem"
@@ -37,13 +37,14 @@ const WorkExperience = () => {
               Coderhouse | Tutor de React Js y Javascript | Feb 2021 -
               Actualidad.
             </Text>
-            <Text fontSize="0.8rem">
+            <Text fontSize="0.8rem" color={isDark ? "white" : "black"}>
               Brindar apoyo y acompañar a estudiantes en su camino para ser
               desarrolladores Frontend. A cargo de aproximadamente 20 alumnos
               por curso. Corrección de desafíos semanales y de entregas
               parciales de sus proyectos finales.
             </Text>
           </li>
+
           <li>
             <Text
               fontSize="1rem"

@@ -14,11 +14,6 @@ const Title = ({ title }) => {
       fontFamily="Amatic SC"
       fontWeight="700"
       textAlign={["left", "center"]}
-      // boxShadow="0 0 20px #8e9273"
-      // backgroundColor="transparent"
-      // _hover={{
-      //   boxShadow: "0 0 20px #8e9273",
-      // }}
     >
       {title}
     </Heading>

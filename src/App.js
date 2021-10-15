@@ -9,7 +9,7 @@ import Portfolio from "./components/Sections/Portfolio";
 import Skills from "./components/Sections/Skills";
 import Resume from "./components/Sections/Resume";
 import Presentation from "./components/Presentation";
-import { Box, Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import EmptySection from "./components/EmptySection";
 import { StoreProvider } from "./components/Context/StoreContext";
 import Header from "./components/Header";
@@ -51,11 +51,11 @@ function App() {
               </Route>
 
               <Route path="/workexperience">
-                <WorkExperience />
+                <WorkExperience isDark={isDark} />
               </Route>
 
               <Route path="/education">
-                <Education />
+                <Education isDark={isDark} />
               </Route>
             </Switch>
 

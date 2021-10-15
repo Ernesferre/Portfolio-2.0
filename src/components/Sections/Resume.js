@@ -16,14 +16,14 @@ import Title from "../Title";
 import { StoreContext } from "../Context/StoreContext";
 import { useContext } from "react";
 
-const Resume = () => {
+const Resume = ({ isDark }) => {
   const { english } = useContext(StoreContext);
 
   return (
     <>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <GridItem colSpan={1}>
-          <GoBack />
+          <GoBack isDark={isDark} />
         </GridItem>
 
         <GridItem colSpan={1} colStart={3} colEnd={4} textAlign="center">

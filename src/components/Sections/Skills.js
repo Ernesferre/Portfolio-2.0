@@ -14,6 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { FaReact, FaHtml5, FaGithub, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiTypescript, SiJira, SiChakraui, SiRedux } from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
 import Zoom from "react-reveal/Zoom";
 import GoBack from "../GoBack";
 import Title from "../Title";
@@ -37,7 +39,9 @@ const Skills = ({ isDark }) => {
 
       <Box
         textAlign="center"
-        mt={8}
+        w="70%"
+        mx="auto"
+        mt="4rem"
         mb="6rem"
         bg={isDark ? "black" : "white"}
         color={isDark ? "white" : "black"}
@@ -50,6 +54,22 @@ const Skills = ({ isDark }) => {
           textAlign="center"
           rounded="lg"
         >
+          <Zoom>
+            <VStack p="2">
+              <Text>HTML5</Text>
+
+              <FaHtml5 size={60} />
+            </VStack>
+          </Zoom>
+
+          <Zoom>
+            <VStack p="2">
+              <Text>CSS3</Text>
+
+              <DiCss3 size={60} />
+            </VStack>
+          </Zoom>
+
           <Zoom>
             <VStack p="2">
               <Text>React Js</Text>
@@ -68,9 +88,33 @@ const Skills = ({ isDark }) => {
 
           <Zoom>
             <VStack p="2">
+              <Text>TypeSript</Text>
+
+              <SiTypescript size={60} />
+            </VStack>
+          </Zoom>
+
+          <Zoom>
+            <VStack p="2">
+              <Text>Redux</Text>
+
+              <SiRedux size={60} />
+            </VStack>
+          </Zoom>
+
+          <Zoom>
+            <VStack p="2">
               <Text>Bootstrap</Text>
 
               <FaBootstrap size={60} />
+            </VStack>
+          </Zoom>
+
+          <Zoom>
+            <VStack p="2">
+              <Text>Chakra UI</Text>
+
+              <SiChakraui size={60} />
             </VStack>
           </Zoom>
 
@@ -84,9 +128,9 @@ const Skills = ({ isDark }) => {
 
           <Zoom>
             <VStack p="2">
-              <Text>HTML5</Text>
+              <Text>Jira</Text>
 
-              <FaHtml5 size={60} />
+              <SiJira size={60} />
             </VStack>
           </Zoom>
         </SimpleGrid>

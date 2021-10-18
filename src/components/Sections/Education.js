@@ -29,9 +29,13 @@ const Education = ({ isDark }) => {
           mb="2rem"
           textDecoration="underline"
           fontFamily="Amatic SC"
-          letterSpacing={2}
+          letterSpacing={1}
         >
-          Educacion Principal
+          {english ? (
+            <Text>Main Education</Text>
+          ) : (
+            <Text>Educacion Principal</Text>
+          )}
         </Heading>
         <ul>
           <li mb="6rem">
@@ -40,11 +44,29 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
-                {" "}
-                Ingeniería Industrial
+              <Text
+                fontWeight="medium"
+                fontSize={["1.4rem", "1.4rem"]}
+                fontFamily="Roboto"
+              >
+                {english ? (
+                  <Text>Industrial Engineering</Text>
+                ) : (
+                  <Text>Ingeniería Industrial</Text>
+                )}
               </Text>
-              <Text mb="0.5rem">Universidad Católica de Cordoba </Text>
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {english ? (
+                  <Text>Catholic University of Cordoba</Text>
+                ) : (
+                  <Text>Universidad Católica de Cordoba</Text>
+                )}
+              </Text>
               <Text color="gray.500" mb="2rem">
                 {" "}
                 Feb 2002 - Mar 2008
@@ -59,10 +81,28 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
-                MBA (Parcial)
-              </Text>{" "}
-              <Text mb="0.5rem">Universidad Siglo 21 </Text>
+              {english ? (
+                <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+                  MBA (Partial)
+                </Text>
+              ) : (
+                <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+                  MBA (Parcial)
+                </Text>
+              )}
+
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {english ? (
+                  <Text>University Siglo 21</Text>
+                ) : (
+                  <Text>Universidad Siglo 21 </Text>
+                )}
+              </Text>
               <Text color="gray.500" mb="2rem">
                 {" "}
                 Feb 2017 - Mar 2018{" "}
@@ -76,14 +116,36 @@ const Education = ({ isDark }) => {
               mb="0.7rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
-                Bachiller en Economia y Gestión de las Organizaciones
+              {english ? (
+                <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+                  Bachelor in Economics and Management Organizations
+                </Text>
+              ) : (
+                <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+                  Bachiller en Economia y Gestión de las Organizaciones
+                </Text>
+              )}
+
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {english ? (
+                  <Text>Lasalle School</Text>
+                ) : (
+                  <Text>Colegio Lasalle </Text>
+                )}
               </Text>
-              <Text mb="0.5rem">Colegio Lasalle </Text>
 
               <Text color="gray.500" mb="2rem">
                 {" "}
-                Ene 1996 - Dic 2001
+                {english ? (
+                  <Text>Jan 1996 - Dec 2001</Text>
+                ) : (
+                  <Text>Ene 1996 - Dic 2001 </Text>
+                )}
               </Text>
             </Text>
           </li>
@@ -97,26 +159,47 @@ const Education = ({ isDark }) => {
           mb="2rem"
           textDecoration="underline"
           fontFamily="Amatic SC"
-          letterSpacing={2}
+          letterSpacing={1}
         >
-          Cursos de Formacion
+          {english ? (
+            <Text>Training Courses</Text>
+          ) : (
+            <Text>Cursos de Formacion </Text>
+          )}
         </Heading>
         <ul>
           <li mb="6rem">
             <Text color={isDark ? "white" : "black"}>
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize="1.5rem">
                 {" "}
                 Alkemy{" "}
               </Text>
-              <Text mb="0.5rem">
-                {" "}
-                Aceleracion React Js | Metodologias Agiles (Jira) | Simulacion
-                de un proyecto integral para ONG | Git | BitBucket | Trabajo en
-                Equipo
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {english ? (
+                  <Text>
+                    React Js Acceleration | Agile Methodologies (Jira) |
+                    Simulation of a project for ONG | Git | BitBucket | Teamwork
+                  </Text>
+                ) : (
+                  <Text>
+                    Aceleracion React Js | Metodologias Agiles (Jira) |
+                    Simulacion de un proyecto integral para ONG | Git |
+                    BitBucket | Trabajo en Equipo
+                  </Text>
+                )}
               </Text>
             </Text>
             <Text color="gray.500" mb="2rem">
-              Abr 2021 - Julio 2021
+              {english ? (
+                <Text>Apr 2021 - Jul 2021</Text>
+              ) : (
+                <Text>Abr 2021 - Jul 2021</Text>
+              )}
             </Text>
           </li>
 
@@ -126,14 +209,26 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize="1.5rem">
                 {" "}
                 Coderhouse{" "}
               </Text>
-              <Text mb="0.5"> React Js </Text>
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {" "}
+                React Js{" "}
+              </Text>
             </Text>
             <Text color="gray.500" mb="2rem">
-              Nov 2020 - Ene 2021
+              {english ? (
+                <Text>Nov 2020 - Jan 2021</Text>
+              ) : (
+                <Text> Nov 2020 - Ene 2021 </Text>
+              )}
             </Text>
           </li>
 
@@ -143,11 +238,19 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize="1.5rem">
                 {" "}
                 Coderhouse{" "}
               </Text>
-              <Text mb="0.5"> Javascript </Text>
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {" "}
+                Javascript{" "}
+              </Text>
             </Text>
             <Text color="gray.500" mb="2rem">
               Oct 2020 - Nov 2021
@@ -159,17 +262,35 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize="1.5rem">
                 {" "}
                 Udemy{" "}
               </Text>
-              <Text mb="0.5">
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
                 {" "}
-                React Js (Fernando Herrera / Maximilian Schwarzmuller){" "}
+                - React: De cero a experto ( Hooks y MERN ) de Fernando Herrera{" "}
+              </Text>
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                - React: The Complete Guide (incl Hooks, React Router, Redux) de
+                Maximilian Schwarzmuller
               </Text>
             </Text>
             <Text color="gray.500" mb="2rem">
-              Feb 2021 - Abr 2021
+              {english ? (
+                <Text>Feb 2021 - Present</Text>
+              ) : (
+                <Text> Feb 2021 - Actualidad </Text>
+              )}
             </Text>
           </li>
 
@@ -179,11 +300,19 @@ const Education = ({ isDark }) => {
               mt="0.5rem"
               color={isDark ? "white" : "black"}
             >
-              <Text fontWeight="medium" fontSize={["1.2rem", "1.5rem"]}>
+              <Text fontWeight="medium" fontSize="1.5rem">
                 {" "}
                 Udemy{" "}
               </Text>
-              <Text mb="0.5"> Javascript (Juan De La Torre ) </Text>
+              <Text
+                mb="0.3rem"
+                fontFamily="Roboto"
+                fontSize="1.4rem"
+                fontWeight="thin"
+              >
+                {" "}
+                JavaScript Moderno Guía Definitiva (Juan De La Torre ){" "}
+              </Text>
             </Text>
             <Text color="gray.500" mb="2rem">
               Nov 2020 - Feb 2021

@@ -24,7 +24,7 @@ const Skills = ({ isDark }) => {
   const { english } = useContext(StoreContext);
 
   return (
-    <>
+    <Box>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
         <GridItem colSpan={1}>
           <GoBack isDark={isDark} />
@@ -38,11 +38,10 @@ const Skills = ({ isDark }) => {
       <Box
         textAlign="center"
         mt={8}
-        mb="5rem"
+        mb="6rem"
         bg={isDark ? "black" : "white"}
         color={isDark ? "white" : "black"}
         id="skills"
-        // mb="10rem"
       >
         <SimpleGrid
           columns={{ sm: 2, md: 5 }}
@@ -52,10 +51,7 @@ const Skills = ({ isDark }) => {
           rounded="lg"
         >
           <Zoom>
-            <VStack
-              p="2"
-              // color="black"
-            >
+            <VStack p="2">
               <Text>React Js</Text>
 
               <FaReact size={60} />
@@ -63,10 +59,7 @@ const Skills = ({ isDark }) => {
           </Zoom>
 
           <Zoom>
-            <VStack
-              p="2"
-              // color="black"
-            >
+            <VStack p="2">
               <Text>JavaScript</Text>
 
               <IoLogoJavascript size={60} />
@@ -98,7 +91,7 @@ const Skills = ({ isDark }) => {
           </Zoom>
         </SimpleGrid>
       </Box>
-    </>
+    </Box>
   );
 };
 

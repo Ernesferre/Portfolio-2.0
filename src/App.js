@@ -2,8 +2,6 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useColorMode } from "@chakra-ui/color-mode";
-// import Header from './components/Header';
-// import Sections from './components/Sections';
 import Profile from "./components/Sections/Profile";
 import Portfolio from "./components/Sections/Portfolio";
 import Skills from "./components/Sections/Skills";
@@ -16,6 +14,7 @@ import Header from "./components/Header";
 import WhatsApp from "./components/WhatsApp";
 import WorkExperience from "./components/Sections/WorkExperience";
 import Education from "./components/Sections/Education";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -27,6 +26,7 @@ function App() {
       <StoreProvider>
         <Box bg={isDark ? "black" : "white"}>
           <BrowserRouter>
+            <ScrollToTop />
             <Header toggleColorMode={toggleColorMode} isDark={isDark} />
 
             <Switch>

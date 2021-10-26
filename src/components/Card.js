@@ -22,21 +22,22 @@ const Card = (props) => {
       position="relative"
       color={props.isDark ? "black" : "black"}
       fontFamily="Roboto"
-      margin="2rem"
+      // border="1px"
+      m="2rem"
       bg={props.isDark ? "white" : "white"}
-      p={0.5}
+      p="0.3rem"
       bg="gray.300"
       _hover={{
         boxShadow: "0 0 20px #8e9273",
       }}
     >
       <Image
-        // objectFit="cover"
+        objectFit="cover"
         width="30rem"
-        height="12rem"
+        height="9rem"
         src={props.picture}
         fallbackSrc="https://via.placeholder.com/382x300"
-        mb={2}
+        // mb="2rem"
       />
 
       <Heading
@@ -44,7 +45,7 @@ const Card = (props) => {
         textAlign="center"
         letterSpacing="2px"
         fontWeight="bold"
-        marginBottom="0.5em"
+        mb="1rem"
         fontFamily="Amatic SC"
       >
         {props.titulo}
@@ -77,12 +78,12 @@ const Card = (props) => {
           <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.used_Tecs}
         </Box>
 
-        <Flex justifyContent="center" mb="1em">
+        <Flex justifyContent="center" mb="1rem">
           <Link href={props.url} isExternal>
             <Button
               boxShadow="2xl"
               textDecoration="none"
-              margin="0.5em"
+              m="0.5em"
               fontFamily="Amatic SC"
               letterSpacing={2}
               color={props.isDark ? "yellow.300" : "black"}

@@ -43,7 +43,8 @@ const WorkExperience = ({ isDark }) => {
             >
               {english ? (
                 <Text>
-                  Coderhouse | React Js & Javascript Tutor | Feb 2021 - Present.
+                  Coderhouseee | React Js & Javascript Tutor | Feb 2021 -
+                  Present.
                 </Text>
               ) : (
                 <Text>
